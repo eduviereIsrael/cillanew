@@ -105,20 +105,13 @@ export default function Home() {
       <div className="brief">
         <div className="container">
           <div className="left">
-            <img src="/brief-left.webp" alt="" />
-            {/* <h3>
-              At Cilla Healthcare Services, we are committed to providing
-              exceptional home care across Alberta.
-            </h3> */}
+            <motion.img initial={{y: 60}} whileInView={{y:0}} transition={{type: "spring", duration: 1}}  src="/brief-left.webp" alt="" />
+       
             <Paragraph paragraph={`At Cilla Healthcare Services, we are committed to providing exceptional home care across Alberta.`} />
           </div>
           <div className="right">
-            <img src="/brief-right.webp" alt="" />
-            {/* <h3>
-              Our patient-centered approach prioritizes personalized care with a
-              focus on our core values: Care, Compassion, Competence,
-              Communication, Courage, and Commitment.
-            </h3> */}
+            <motion.img initial={{y: 60}} whileInView={{y:0}}  transition={{delay: 0.1, type: "spring", duration: 1}} src="/brief-right.webp" alt="" />
+         
             <Paragraph paragraph={`Our patient-centered approach prioritizes personalized care with a focus on our core values: Care, Compassion, Competence, Communication, Courage, and Commitment.`} />
           </div>
         </div>

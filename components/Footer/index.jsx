@@ -4,6 +4,10 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="container">
+       {/* <img src="/shadowss.svg" className="shadows" alt="" />
+      <div className="shadow-cont">
+      </div> */}
+      <div className="contains">
         <div className="footer-heading">
           <h1>ARE YOU READY TO EXPERIENCE EXCEPTIONAL HOME CARE SERVICES?</h1>
           <p>Contact Cilla Health Care Services today</p>
@@ -34,6 +38,8 @@ const Footer = () => {
             <a href="#">FB</a>
           </div>
         </div>
+
+      </div>
       </div>
     </div>
   );

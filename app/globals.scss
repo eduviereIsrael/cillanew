@@ -603,7 +603,7 @@ p{
 
     .shadows{
         position: absolute;
-        height: 890px;
+        // height: 890px;
         top: 30px;
         left: 100px;
     }
@@ -1085,14 +1085,58 @@ p{
 .footer {
     text-align: center;
     color: white;
-    padding: 126px 0px;
+    // padding: 126px 0px;
     background-color: #1e1e1e;
+    // position: relative;
 
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    
+
+  //   .shadows{
+  //     position: absolute;
+  //     height: 890px;
+  //     top: 30px;
+  //     left: 100px;
+  // }
+
+  // .shadow-cont{
+  //     position: absolute;
+  //     height: 100%;
+  //     width: 100%;
+  //     top: 00px;
+  //     left: 0;
+  //     background-color: rgba(0, 0, 0, 0.555);
+  // }
   
     .container {
-    background: none;
+      background: none;
+      // position: relative;
+      background-image: url(/shadowss.svg);
+      background-repeat: no-repeat;
+      padding-top: 140px;
+      padding-bottom: 140px;
+      max-width: 2000px;
+      box-shadow: inset 1000px 1000px 0 rgba(0, 0, 0, 0.74);
+    }
+
+    .contains{
+      padding: 0 18px;
+      max-width: 1400px;
+      width: 100%;
+      margin: 0 auto;
+      // background-color: white;
+    
+      @media (min-width: 768px){
+        padding: 0px 90px;
+    
+      }
+    
+      @media (min-width: 1800px){
+        padding: 0px 0px;
+    
+      }
+    
     }
   
     .footer-heading {
@@ -1140,7 +1184,7 @@ p{
       margin-top: 150px;
   
       .footer-item {
-        border: 1px solid #2e2e2e;
+        // border: 1px solid #2e2e2e;
         padding: 20px;
         border-radius: 10px;
         width: 30%;
@@ -1156,17 +1200,17 @@ p{
           font-size: 1.2rem;
           line-height: 1.5;
           
-          @media(min-width: 400px) {
-            font-size: 1.95vw;
-          }
+          // @media(min-width: 400px) {
+          //   font-size: 1.95vw;
+          // }
 
-          @media(min-width: 568px) {
-            font-size: 1.31vw;
-          }
+          // @media(min-width: 568px) {
+          //   font-size: 1.31vw;
+          // }
 
-          @media(min-width: 608px) {
-            font-size: 1.84vw;
-          }
+          // @media(min-width: 608px) {
+          //   font-size: 1.84vw;
+          // }
 
           // @media(min-width: 968px) {
           //   font-size: 1.1vw;
