@@ -1,10 +1,12 @@
 
-
+"use client"
 import Image from "next/image";
 import styles from "./page.module.css";
 import { Faq, Footer, Navbar } from "@/components";
 import Marquee from "react-fast-marquee"
 import { Paragraph } from "@/components";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 export default function Home() {
   const services = [
@@ -64,6 +66,23 @@ export default function Home() {
     },
   ];
 
+  const container = useRef(null);
+  const image = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+
+      target: container,
+
+      offset: ['start end', 'end start']
+
+  })
+
+  const sm = useTransform(scrollYProgress, [0, 1], [0, -50]);
+
+  const md = useTransform(scrollYProgress, [0, 1], [0, -250]);
+
+  const lg = useTransform(scrollYProgress, [0, 1], [0, -400]);
+
 
 
   return (
@@ -71,11 +90,15 @@ export default function Home() {
       <Navbar />
       <div className="hero">
         <div className="container">
-          <h1>
+        <motion.div 
+        animate={{ height: 0, y:-600 }}
+        transition={{ delay: 1, type: "spring" }}
+        className="bg-hero"></motion.div>
+          <motion.h1 transition={{delay: 1.3, type: "spring", duration: 1}} initial={{y:80, opacity:0}} whileInView={{y: 0, opacity: 1}} >
             Providing exceptional care for you and your loved ones in the
             comfort of your home
-          </h1>
-          <button className="pri-btn">Contact Us</button>
+          </motion.h1>
+          <motion.button transition={{delay: 1.5, type: "spring", duration: 1}} initial={{y:80, opacity:0}} whileInView={{y: 0, opacity: 1}}  className="pri-btn">Contact Us</motion.button>
         </div>
       </div>
 
@@ -102,7 +125,10 @@ export default function Home() {
       </div>
 
       <div className="services">
-        <img src="/shadows.svg" className="shadows" alt="" />
+        <img src="/shadowss.svg" className="shadows" alt="" />
+        <div className="shadow-cont">
+
+        </div>
         <div className="container">
           {/* <h2>
             We provide personalized, compassionate care for individuals of all
@@ -175,7 +201,32 @@ export default function Home() {
        
       </div>
 
-      <div className="banners">
+      <div className="banners" ref={container} >
+        <div className="container">
+          <motion.div className="branding"  >
+            <img src="/banner-img-1.webp" alt="" />
+            <div className="content" style={{height: image.current?.clientHeight}} >
+
+            <div className="logo">
+              <p>Logo</p>
+            </div>
+            <div className="text">
+              {/* <h2>
+                We are dedicated to supporting you with the highest quality of
+                care.
+              </h2> */}
+              <Paragraph paragraph={`We are dedicated to supporting you with the highest quality of care.`} />
+              <button className="contact-button">Contact us</button>
+            </div>
+            </div>
+          </motion.div>
+            <motion.img ref={image} style={{top: md}}  src="/banner-img-1.webp" alt="Caregiver assisting senior" />
+            <motion.img style={{top: lg}}  src="/banner-img-2.webp" className="remove" alt="Family outside home" />
+        </div>
+      
+      </div>
+
+      <div className="banners-mobile">
         <div className="container">
           <div className="branding">
             <div className="logo">
