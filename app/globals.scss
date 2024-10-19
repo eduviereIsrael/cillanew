@@ -89,6 +89,7 @@ h4{
 p{
     font-size: 15px;
     line-height: 1.3;
+    font-weight: 400;
 }
 
 .container{
@@ -549,11 +550,16 @@ p{
 
     padding-bottom: 140px;
     position: relative;
-    overflow-y: hidden;
+    overflow: hidden;
+    max-width: 100vw;
+    // background-color: red;
+
     .container{
         background: none;
         padding-top: 140px;
         color: #fff;
+        overflow-y: hidden;
+
 
         h2{
             margin-bottom: 80px;
@@ -563,6 +569,8 @@ p{
 
     .contain{
         width: 100%;
+        overflow-y: hidden;
+
     }
 
     

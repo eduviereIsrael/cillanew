@@ -14,57 +14,58 @@ export default function Home() {
       title: "Alzheimer’s and Dementia Care",
       description:
         "This involves specialized support and services designed to meet the unique needs of individuals living with Alzheimer’s disease or other forms of dementia.",
-      image: "",
+      image: "/a-a-d-c.webp",
     },
     {
       title: "Companionship Service",
       description:
         "Our companionship service integrates daily living support with engaging companionship, offering a holistic approach to emotional, physical, and mental care.",
-      image: "",
+      image: "/c-s.webp",
     },
     {
       title: "Foot Care",
       description:
         "This involves specialized services aimed at maintaining the health and comfort of an individual’s feet.",
-      image: "",
+      image: "/f-c.webp",
     },
     {
       title: "Nursing Care",
       description:
         "This encompasses a range of professional services provided by registered nurses and licensed practical nurses to manage and support patients’ health and well-being.",
-      image: "",
+      image: "/n-c.webp",
     },
     {
       title: "Palliative and End-of-Life Care",
       description:
         "This refers to specialized medical and supportive services aimed at improving the quality of life for individuals with serious, life-limiting illnesses.",
-      image: "",
+      image: "/p-a-e-o-l-c.webp",
     },
     {
       title: "Personal Hygiene",
       description:
         "Personal care involves support with essential activities of daily living, including washing, bathing, and dressing.",
-      image: "",
+      image: "/p-h.webp",
     },
     {
       title: "Respite Care",
       description:
         "Cilla Healthcare Services provides temporary relief for primary caregivers by offering short-term, professional care for individuals who need ongoing support.",
-      image: "",
+      image: "/r-c.webp",
     },
     {
       title: "Safeguard Visits",
       description:
         "These are scheduled check-ins designed to ensure the safety and well-being of individuals receiving care.",
-      image: "",
+      image: "/s-v.webp",
     },
     {
       title: "Transportation Services",
       description:
         "Cilla Healthcare Services provide essential support for individuals who need assistance getting to and from various destinations.",
-      image: "",
+      image: "/t-s.webp",
     },
   ];
+  
 
   const container = useRef(null);
   const image = useRef(null);
@@ -131,21 +132,13 @@ export default function Home() {
           <Paragraph paragraph={`We provide personalized, compassionate care for individuals of all ages, including seniors, individuals with disabilities, and those managing various health conditions.`} />
         </div>
         <Marquee style={{alignItems: "flex-start", display: "flex"}} pauseOnHover={true}>
-          {/* <div className="card">
-              <img src="/c-s.webp" alt="" />
-              <div className="content">
-
-                <h4>Companionship Service</h4>
-                <p>Our companionship service integrates daily living support with engaging companionship, offering a
-                holistic approach to emotional, physical, and mental care.</p>
-              </div>
-            </div> */}
+ 
             <div className="contain">
 
             {services.map((service, index) => (
               <div key={index} className="card">
                 {/* <img src={service.image} alt="" /> */}
-                <img src="/c-s.webp" alt="" />
+                <img src={service.image} alt="" />
 
                 <div className="content">
                   <h4>{service.title}</h4>
