@@ -7,6 +7,6 @@
 6 silly config:load:file:C:\Users\tives\Documents\projects\react\cilla\tivesmynameAppDataRoamingnpm-cache\etc\npmrc
 7 verbose title npm run dev
 8 verbose argv "run" "dev"
-9 verbose logfile logs-max:10 dir:C:\Users\tives\Documents\projects\react\cilla\tivesmynameAppDataRoamingnpm-cache\_logs\2024-10-16T19_18_07_257Z-
-10 verbose logfile C:\Users\tives\Documents\projects\react\cilla\tivesmynameAppDataRoamingnpm-cache\_logs\2024-10-16T19_18_07_257Z-debug-0.log
+9 verbose logfile logs-max:10 dir:C:\Users\tives\Documents\projects\react\cilla\tivesmynameAppDataRoamingnpm-cache\_logs\2024-12-16T12_01_09_048Z-
+10 verbose logfile C:\Users\tives\Documents\projects\react\cilla\tivesmynameAppDataRoamingnpm-cache\_logs\2024-12-16T12_01_09_048Z-debug-0.log
 11 silly logfile done cleaning log files
