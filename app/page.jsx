@@ -2,9 +2,8 @@
 "use client"
 import Image from "next/image";
 import styles from "./page.module.css";
-import { Faq, Footer, Navbar } from "@/components";
+import { Faq, Footer, Navbar, Paragraph } from "../components"
 import Marquee from "react-fast-marquee"
-import { Paragraph } from "@/components";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Link from "next/link";
@@ -101,7 +100,7 @@ export default function Home() {
 
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="hero">
         <div className="container">
         <motion.div 

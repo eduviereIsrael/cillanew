@@ -60,12 +60,7 @@ const Faq = () => {
       question: "How do I get started with your services?",
       answer:
         "To get started, simply contact us for a consultation. We’ll assess your needs and develop a personalized care plan that works best for you or your loved one.",
-    },
-    {
-      question: "Do you accept insurance for your services?",
-      answer:
-        "Yes, we work with various insurance providers. Contact us to discuss your specific insurance coverage and how it applies to our services.",
-    },
+    }
   ];
   
   return (

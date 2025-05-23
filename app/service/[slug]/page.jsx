@@ -181,7 +181,7 @@ const page = ({params}) => {
     const service = careServices.find(serv => serv.slug === params.slug)
   return (
     <div>
-        <Navbar />
+        {/* <Navbar /> */}
         <div className="container service-page">
       <div className="service-page__header">
         <h1>{service.name}</h1>
