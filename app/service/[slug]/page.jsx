@@ -1,4 +1,4 @@
-import { Footer, Navbar } from '@/components'
+import { Footer } from '../../../components';
 import React from 'react'
 
 const page = ({params}) => {

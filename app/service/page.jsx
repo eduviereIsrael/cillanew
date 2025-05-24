@@ -2,7 +2,7 @@
 'use client';
 import React from "react";
 import Link from "next/link";
-import { Footer } from "@/components";
+import { Footer } from "../../components";
 
 const services = [
   {
