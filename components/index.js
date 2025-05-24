@@ -3,6 +3,7 @@ export {default as Footer} from "./Footer";
 export {default as Word} from "./Word";
 export {default as Paragraph} from "./Paragraph";
 export {default as Faq} from "./Faq";
+export {default as ContactForm} from "./Contact-form";
 
 
 
