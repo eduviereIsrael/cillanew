@@ -33,7 +33,7 @@ const Footer = () => {
           <a href="#">About Us</a>
           <a href="#">Careers</a>
           <div className="social-links">
-            <a href="#">WA</a>
+            <a target="_blank" href="https://wa.me/+14039187917">WA</a>
             <a href="#">IG</a>
             <a href="#">FB</a>
           </div>
