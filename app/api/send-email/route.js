@@ -74,13 +74,13 @@ ${fields.message}
 
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
-      to: fields.email,
+      to: process.env.EMAIL_RECEIVER,
       subject: `Application from ${fields.fullName}`,
       text: emailBody,
       attachments: filePath
         ? [
             {
-              filename: `${fields.fullName}-resume`,
+              filename: `${fields.fullName}-resume.pdf`,
               path: filePath,
             },
           ]

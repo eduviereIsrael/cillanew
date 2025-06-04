@@ -7,6 +7,7 @@ import Marquee from "react-fast-marquee"
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
 
@@ -97,6 +98,12 @@ export default function Home() {
   const lg = useTransform(scrollYProgress, [0, 1], [0, -400]);
 
 
+  const router = useRouter();
+
+  const handleClick = (link) => {
+    router.push(link);
+  }
+
 
   return (
     <div>
@@ -111,7 +118,7 @@ export default function Home() {
             Providing exceptional care for you and your loved ones in the
             comfort of your home
           </motion.h1>
-          <motion.button transition={{delay: 1.5, type: "spring", duration: 1}} initial={{y:80, opacity:0}} whileInView={{y: 0, opacity: 1}}  className="pri-btn">Contact Us</motion.button>
+          <motion.button onClick = {() => handleClick("/contact")} transition={{delay: 1.5, type: "spring", duration: 1}} initial={{y:80, opacity:0}} whileInView={{y: 0, opacity: 1}}  className="pri-btn">  Contact Us</motion.button>
         </div>
       </div>
 
@@ -219,7 +226,7 @@ export default function Home() {
                 care.
               </h2> */}
               <Paragraph paragraph={`We are dedicated to supporting you with the highest quality of care.`} />
-              <button className="contact-button">Contact us</button>
+              <button onClick = {() => handleClick("/contact")} className="contact-button">Contact us</button>
             </div>
             </div>
           </motion.div>
