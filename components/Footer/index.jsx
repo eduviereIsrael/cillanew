@@ -45,8 +45,8 @@ const Footer = () => {
               <a target="_blank" href="https://wa.me/+14039187917">
                 WA
               </a>
-              <a href="#">IG</a>
-              <a href="#">FB</a>
+              <a target="_blank" href="https://www.instagram.com/cilla_healthcare?igsh=MWYzMzFjcmptMHd1MA==">IG</a>
+              <a target="_blank" href="https://www.facebook.com/Cilla.Healthcare">FB</a>
             </div>
           </div>
         </div>
