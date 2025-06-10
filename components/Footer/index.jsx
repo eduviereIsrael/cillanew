@@ -20,27 +20,34 @@ const Footer = () => {
           <div className="footer-heading">
             <h1>ARE YOU READY TO EXPERIENCE EXCEPTIONAL HOME CARE SERVICES?</h1>
             <p>Contact Cilla Health Care Services today</p>
-            <button onClick = {() => handleClick("/contact")}  >Contact us</button>
+            <button onClick={() => handleClick("/contact")}>Contact us</button>
           </div>
           <div className="footer-info">
             <div className="footer-item">
               <span>Call</span>
-              <p>+1 234 56 789</p>
+              <p>
+                <a href="tel:+14039187917" style={{ color: "inherit", textDecoration: "none" }}>
+                  +1 (403) 918 7917
+                </a>
+              </p>
             </div>
             <div className="footer-item">
               <span>E-mail</span>
-              <p>info@cillahealthcareservices</p>
+              <p>
+                <a href="mailto:info@cillahealthcare.ca" style={{ color: "inherit", textDecoration: "none" }}>
+                  info@cillahealthcare.ca
+                </a>
+              </p>
             </div>
             <div className="footer-item">
-              <span>E-mail</span>
-              <p>info@cillahealthcareservices</p>
+             
             </div>
           </div>
           <hr />
           <div className="footer-links">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Careers</a>
+            <a href="/">Home</a>
+            <a href="/about">About Us</a>
+            <a href="/career">Careers</a>
             <div className="social-links">
               <a target="_blank" href="https://wa.me/+14039187917">
                 WA
