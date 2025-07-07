@@ -50,10 +50,14 @@ const Footer = () => {
             <a href="/career">Careers</a>
             <div className="social-links">
               <a target="_blank" href="https://wa.me/+14039187917">
-                WA
+                <img src="/wa.svg" alt="WhatsApp" style={{ width: 24, height: 24 }} />
               </a>
-              <a target="_blank" href="https://www.instagram.com/cilla_healthcare?igsh=MWYzMzFjcmptMHd1MA==">IG</a>
-              <a target="_blank" href="https://www.facebook.com/Cilla.Healthcare">FB</a>
+              <a target="_blank" href="https://www.instagram.com/cilla_healthcare?igsh=MWYzMzFjcmptMHd1MA==">
+                <img src="/ig.svg" alt="Instagram" style={{ width: 24, height: 24 }} />
+              </a>
+              <a target="_blank" href="https://www.facebook.com/Cilla.Healthcare">
+                <img src="/fb.svg" alt="Facebook" style={{ width: 24, height: 24 }} />
+              </a>
             </div>
           </div>
         </div>

@@ -690,8 +690,8 @@ img {
     // max-width: 1200px;
     // margin: 0 auto;
     // padding: 2rem;
-    padding-top: 140px;
-    padding-bottom: 140px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     // font-family: 'Arial', sans-serif;
 
     h2 {
@@ -1047,7 +1047,7 @@ img {
           width: 100%;
           justify-content: space-between;
           align-items: center;
-          padding: 15px 25px;
+          padding: 5px 25px;
 
           img {
             cursor: pointer;
@@ -1101,7 +1101,7 @@ img {
 
         .faq-card {
           .f-c-header {
-            padding: 28px 52px;
+            padding: 8px 52px;
           }
 
           p {
@@ -1159,8 +1159,8 @@ img {
     // position: relative;
     background-image: url(/shadowss.svg);
     background-repeat: no-repeat;
-    padding-top: 140px;
-    padding-bottom: 140px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     max-width: 2000px;
     box-shadow: inset 1000px 1000px 0 rgba(0, 0, 0, 0.74);
   }
@@ -1222,8 +1222,8 @@ img {
   .footer-info {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
-    margin-top: 150px;
+    // margin-bottom: 40px;
+    // margin-top: 50px;
 
     .footer-item {
       // border: 1px solid #2e2e2e;
@@ -1573,7 +1573,7 @@ $blue-color: #00007c;
       }
     }
     .the-company {
-      margin-top: 100px;
+      margin-top: 60px;
 
       display: flex;
       flex-direction: column;
