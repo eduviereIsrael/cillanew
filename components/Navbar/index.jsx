@@ -85,7 +85,14 @@ const Navbar = ({ data }) => {
     <div className="NavbarDiv">
       <div className="NavbarContainer">
         {/* <img src="/motomi-logo.svg" alt="logo" className="logo" /> */}
-        <img src="/cill-logo.svg" alt="logo" className="logo" />
+        <div className="logo-cont">
+          <img src="/cilla-icon.svg" alt="logo" className="logo" />
+          <div className="logo-text" >
+            <p>Cilla</p>
+            <p>Healthcare</p>
+            <p> Services </p>
+          </div>
+        </div>
 
         {/* <img src="/motomi-logo.svg" alt="logo" className="logo" /> */}
 

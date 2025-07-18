@@ -368,6 +368,19 @@ img {
       height: 85px;
     }
 
+    .logo-cont {
+      display: flex;
+      align-items: center;
+
+      p {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+    }
+
     @media (min-width: 768px) {
       display: flex;
     }
@@ -397,13 +410,12 @@ img {
       display: flex;
       align-items: center;
 
-      p{
+      p {
         margin: 0;
         padding: 0;
         font-size: 12px;
         font-weight: 500;
         text-transform: uppercase;
-
       }
     }
 
