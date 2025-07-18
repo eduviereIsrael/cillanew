@@ -85,7 +85,7 @@ const Navbar = ({ data }) => {
     <div className="NavbarDiv">
       <div className="NavbarContainer">
         {/* <img src="/motomi-logo.svg" alt="logo" className="logo" /> */}
-        <img src="/cilla-logo.svg" alt="logo" className="logo" />
+        <img src="/cill-logo.svg" alt="logo" className="logo" />
 
         {/* <img src="/motomi-logo.svg" alt="logo" className="logo" /> */}
 
@@ -104,7 +104,14 @@ const Navbar = ({ data }) => {
         </div>
       </div>
       <div className="MobileContainer">
-        <img src="/cilla-logo.svg" alt="logo" className="logo" />
+        <div className="logo-cont">
+          <img src="/cilla-icon.svg" alt="logo" className="logo" />
+          <div className="logo-text" >
+            <p>Cilla</p>
+            <p>Healthcare Services </p>
+            {/* <p> Services</p> */}
+          </div>
+        </div>
         <div
           className={navClick ? "hambuga spin" : "hambuga"}
           onClick={() => {
